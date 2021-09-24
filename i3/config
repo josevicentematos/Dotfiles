@@ -139,7 +139,7 @@ bindsym $mod+r mode "resize"
 ## customization starts here ##
 
 # start dmenu
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nf '#BD93F9' -nb '#282A36' -sb '#BD93F9' -sf '#44475A' -fn 'monospace-8' -l 5"
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -nf '#BD93F9' -nb '#282A36' -sb '#BD93F9' -sf '#44475A' -fn 'monospace-8' -l 5"
 
 # workspaces
 set $ws1 ""
@@ -222,7 +222,8 @@ client.unfocused    #1F1F1F #1F1F1F #1F1F1F #1F1F1F
 bindsym --release Print exec "scrot -s -e 'xclip -selection clipboard -t image/png -i $f' ~/Pictures/Screenshots/"
 
 # start powermenu
-bindsym $mod+p exec /home/jose/.config/polybar/docky/scripts/powermenu.sh
+#bindsym $mod+p exec /home/jose/.config/polybar/docky/scripts/powermenu.sh
+bindsym $mod+Shift+x exec /home/jose/.config/i3/powermenu.sh
 
 # start applications
 bindsym $mod+F1 exec google-chrome
@@ -231,3 +232,4 @@ bindsym $mod+F3 exec gnome-calculator
 bindsym $mod+F10 exec cinnamon-settings
 bindsym $mod+F11 exec subl .config/i3/i3status.conf
 bindsym $mod+F12 exec subl .config/i3/config
+
