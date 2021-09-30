@@ -210,7 +210,7 @@ exec_always feh --bg-fill /home/jose/Pictures/Wallpapers/Wallpaper_1.jpg
 # i3-gaps
 gaps inner 15
 gaps outer 0
-# smart_gaps on
+smart_gaps on
 
 
 # for_window [class="^.*"] border pixel 3R
