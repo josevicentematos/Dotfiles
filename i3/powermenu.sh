@@ -5,6 +5,6 @@ CHOICE=$(echo -e "Cancel\nExit\nRestart\nShutdown" | dmenu -i -nf '#BD93F9' -nb 
 
 case "$CHOICE" in
   Exit) i3-msg exit & ;;
-  Restart) sudo shutdown -h now & ;;
-  Shutdown) sudo shutdown -r now & ;;
+  Restart) shutdown -r now & ;;
+  Shutdown) shutdown -h now & ;;
 esac
